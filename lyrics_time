@@ -1,0 +1,44 @@
+#Python_project
+Today I,
+Worked on a small Python terminal project where song lyrics are printed with timed delays, creating a typing effect.
+Through this, I got hands-on practice with Python loops, timing, and terminal output behavior.
+
+#Python_code
+import time
+import sys
+
+def print_lyrics():
+    lyrics = [
+        "Jaane Na Tu",
+        "Ke Tera Kitna Khayal Main Karun",
+        "Ishq Mein Hoon",
+        "To Phir Itne Sawal Kyu Karoon",
+        "",
+        "Chedkhaniyaan Haan Haan",
+        "Nazrein Teri Karti Yahaan",
+        "Ittar Sa Tu Haan Haan",
+        "Mujhme Hi Phir Ghul Sa Gaya",
+        "Aaja Maahi Aaja Maahi",
+        "",
+        "Aaja Maahi Aaja Maahi"
+    ]
+
+    delays = [
+        0.7, 0.6, 0.7, 0.8,
+        0.3,
+        0.8, 0.7, 0.5, 0.7,
+        0.3,3, 1
+    ]
+
+    print(" Song Lyrics \n")
+    time.sleep(0.9)
+
+    for i, line in enumerate(lyrics):
+        for char in line:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(0.11)
+        print()
+        time.sleep(delays[i])
+
+print_lyrics()
