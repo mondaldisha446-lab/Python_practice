@@ -43,4 +43,23 @@ Today I studied and practiced Python fundamentals.
 This project helped me better understand how Python controls execution flow in a terminal environment.
 
 #Todays practice
+
 I learnt loops and datatypes and also practiced a lot of example questions and i'll keep on improving my knowledge day by day.
+Today I studied loops in Python and practiced using:
+- for loops
+- while loops
+- range() function
+- Loop control statements: break, continue, pass
+
+#What I practiced
+
+- Iterating over lists and strings
+- Printing patterns using loops
+- Using loops with conditions
+- Avoiding infinite loops
+
+#What I understood better
+
+- When to use for vs while
+- How iteration works step by step
+- How to control loop flow using break and continue
