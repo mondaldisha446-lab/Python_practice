@@ -47,3 +47,15 @@ try:
 except:
     print("Invalid expression")
 
+
+# third method
+while True:
+    expression = input("Enter expression (or 'exit' to stop): ")
+
+    if expression.lower() == "exit":
+        break
+
+    try:
+        print("Result:", eval(expression))
+    except:
+        print("Invalid expression")
