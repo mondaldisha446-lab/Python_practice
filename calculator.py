@@ -1,0 +1,49 @@
+## Python Calculator
+
+This project is a simple calculator built using Python.
+
+### What it does
+- Takes mathematical expressions as input (e.g. 2+3, 2+3*5, 2+3%5/3)
+- Supports multiple operators at once
+- Prints the evaluated result
+
+### What I learned
+- Using operators in Python
+- Operator precedence
+- Handling user input
+- Error handling with try-except
+- Writing the same program in different ways
+
+### Implementations
+- Calculator using `eval()`
+- Loop-based calculator
+- Manual operator-based calculator
+
+# first method
+a = int(input("Enter first number: "))
+op = input("Enter operator (+, -, *, /, %): ")
+b = int(input("Enter second number: "))
+
+if op == "+":
+    print(a + b)
+elif op == "-":
+    print(a - b)
+elif op == "*":
+    print(a * b)
+elif op == "/":
+    print(a / b)
+elif op == "%":
+    print(a % b)
+else:
+    print("Invalid operator")
+
+
+# second method
+expression = input("Enter expression: ")
+
+try:
+    result = eval(expression)
+    print("Result:", result)
+except:
+    print("Invalid expression")
+
